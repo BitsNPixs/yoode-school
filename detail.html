@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoode | Build Your Uniform - Style 01</title>
+    <meta
+      name="description"
+      content="Build your own school uniform kit from scratch. Choose fabric, manufacturing type, sleeve, buttons, logo placement and print type."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- ============ PAGE TITLE ============ -->
+      <section class="page-head">
+        <div class="container">
+          <div class="page-head-inner" data-aos="fade-up">
+            <div>
+              <h1 class="page-title">Style 01</h1>
+              <p class="page-sub">Build your own kit from the scratch</p>
+            </div>
+            <a href="list.html" class="back-link">Back</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BUILDER ============ -->
+      <section class="builder">
+        <div class="container">
+          <div class="builder-grid">
+            <!-- ---------- LEFT : PREVIEW ---------- -->
+            <div class="preview-col">
+              <div class="preview-sticky">
+                <!-- ===== IMAGE CAROUSEL ===== -->
+                <div
+                  class="gallery"
+                  id="gallery"
+                  data-aos="fade-up"
+                  role="group"
+                  aria-roledescription="carousel"
+                  aria-label="Product images"
+                >
+                  <div class="gallery-viewport">
+                    <div class="gallery-track" id="galleryTrack">
+                      <button
+                        class="gallery-slide"
+                        type="button"
+                        aria-label="View image 1 of 5 in full screen"
+                      >
+                        <img
+                          src="assets/images/detail%20page/slider%20images/ChatGPT Image Sep 7, 2026, 12_06_24 PM copy 1.png"
+                          alt="Students wearing the customised school uniform"
+                          data-caption="Full uniform kit"
+                        />
+                      </button>
+                      <button
+                        class="gallery-slide"
+                        type="button"
+                        aria-label="View image 2 of 5 in full screen"
+                      >
+                        <img
+                          src="assets/images/detail%20page/slider%20images/ChatGPT Image Sep 7, 2026, 11_00_11 AM copy 1.png"
+                          alt="Close up of the raglan sleeve"
+                          data-caption="Raglan sleeve detail"
+                        />
+                      </button>
+                      <button
+                        class="gallery-slide"
+                        type="button"
+                        aria-label="View image 3 of 5 in full screen"
+                      >
+                        <img
+                          src="assets/images/detail%20page/slider%20images/ChatGPT Image Sep 7, 2026, 11_29_33 AM copy 1.png"
+                          alt="Close up of the set-in sleeve"
+                          data-caption="Set-in sleeve detail"
+                        />
+                      </button>
+                      <button
+                        class="gallery-slide"
+                        type="button"
+                        aria-label="View image 4 of 5 in full screen"
+                      >
+                        <img
+                          src="assets/images/detail%20page/slider%20images/Gemini_Generated_Image_shm8ckshm8ckshm8 copy 1.png"
+                          alt="Left chest logo placement"
+                          data-caption="Left chest logo placement"
+                        />
+                      </button>
+                      <button
+                        class="gallery-slide"
+                        type="button"
+                        aria-label="View image 5 of 5 in full screen"
+                      >
+                        <img
+                          src="assets/images/detail%20page/slider%20images/image 195.png"
+                          alt="Right chest logo placement"
+                          data-caption="Right chest logo placement"
+                        />
+                      </button>
+                    </div>
+                  </div>
+
+                  <button
+                    class="gallery-nav gallery-nav--prev"
+                    id="galleryPrev"
+                    type="button"
+                    aria-label="Previous image"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15 5l-7 7 7 7" />
+                    </svg>
+                  </button>
+                  <button
+                    class="gallery-nav gallery-nav--next"
+                    id="galleryNext"
+                    type="button"
+                    aria-label="Next image"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+
+                  <div
+                    class="gallery-dots"
+                    id="galleryDots"
+                    role="tablist"
+                    aria-label="Choose image"
+                  ></div>
+                </div>
+
+                <div class="price-bar" data-aos="fade-up" data-aos-delay="100">
+                  <span class="price-label">Estimated Price:</span>
+                  <span class="price-value"
+                    >&#8377;<span id="priceValue">350</span> / Unit</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ---------- RIGHT : CONFIGURATOR ---------- -->
+            <div class="config-col">
+              <!-- ===== TSHIRT PANEL ===== -->
+              <div class="panel is-open" data-panel data-aos="fade-up">
+                <button
+                  class="panel-head"
+                  data-panel-toggle
+                  aria-expanded="true"
+                >
+                  <span class="panel-title">Tshirt</span>
+                  <span class="panel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 19V5M12 5l-6 6M12 5l6 6" />
+                    </svg>
+                  </span>
+                </button>
+
+                <div class="panel-body">
+                  <div class="panel-body-inner">
+                    <!-- Choose Fabric -->
+                    <div class="opt-group" data-group="fabric">
+                      <h3 class="opt-title">Choose Fabric</h3>
+                      <div class="opt-grid cols-4">
+                        <button
+                          class="opt-card"
+                          data-price="0"
+                          data-name="Mars Economic 200 GSM"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/fabric/image%20179.png"
+                              alt="Mars Economic 200 GSM fabric"
+                          /></span>
+                          <span class="opt-label">Mars Economic 200 GSM</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card is-active"
+                          data-price="50"
+                          data-name="Mars Premium 200 GSM"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/fabric/image%20180.png"
+                              alt="Mars Premium 200 GSM fabric"
+                          /></span>
+                          <span class="opt-label">Mars Premium 200 GSM</span>
+                          <span class="opt-price">+ &#8377;50</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card"
+                          data-price="0"
+                          data-name="Dot Knit Economic 180 GSM"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/fabric/image%20181.png"
+                              alt="Dot Knit Economic 180 GSM fabric"
+                          /></span>
+                          <span class="opt-label"
+                            >Dot Knit Economic 180 GSM</span
+                          >
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card"
+                          data-price="50"
+                          data-name="Dot Knit Premium 180 GSM"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/fabric/image%20182.png"
+                              alt="Dot Knit Premium 180 GSM fabric"
+                          /></span>
+                          <span class="opt-label"
+                            >Dot Knit Premium 180 GSM</span
+                          >
+                          <span class="opt-price">+ &#8377;50</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Manufacturing Type -->
+                    <div class="opt-group" data-group="manufacturing">
+                      <h3 class="opt-title">Manufacturing Type</h3>
+                      <div class="opt-grid cols-2">
+                        <button
+                          class="opt-card opt-card--wide is-active"
+                          data-price="0"
+                          data-name="All Over Print"
+                        >
+                          <span class="opt-wide-media"
+                            ><img
+                              src="assets/images/detail%20page/manufacturing%20type/image%20187.png"
+                              alt="All over print fabric"
+                          /></span>
+                          <span class="opt-wide-body">
+                            <span class="opt-desc"
+                              >All over print (AOP) is a textile printing
+                              technique where a design is printed across the
+                              entire surface of the fabric.</span
+                            >
+                            <span class="opt-label">All Over Print</span>
+                          </span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card opt-card--wide"
+                          data-price="80"
+                          data-name="Cut &amp; Sew"
+                        >
+                          <span class="opt-wide-media"
+                            ><img
+                              src="assets/images/detail%20page/manufacturing%20type/image%20188.png"
+                              alt="Cut and sew fabric"
+                          /></span>
+                          <span class="opt-wide-body">
+                            <span class="opt-desc"
+                              >A manufacturing method where different pieces of
+                              fabric are carefully cut and stitched
+                              together.</span
+                            >
+                            <span class="opt-label">Cut &amp; Sew</span>
+                            <span class="opt-price">+ &#8377;80</span>
+                          </span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Choose Sleeve Type -->
+                    <div class="opt-group" data-group="sleeve">
+                      <h3 class="opt-title">Choose Sleeve Type</h3>
+                      <div class="opt-grid cols-4">
+                        <button
+                          class="opt-card"
+                          data-price="0"
+                          data-name="Set-in Sleeve"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/sleeve%20type/Gemini_Generated_Image_laygnzlaygnzlayg%201.png"
+                              alt="Set-in sleeve"
+                          /></span>
+                          <span class="opt-label">Set-in Sleeve</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card is-active"
+                          data-price="50"
+                          data-name="Raglan"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/sleeve%20type/ChatGPT%20Image%20Sep%207,%202026,%2012_06_24%20PM%20copy%201.png"
+                              alt="Raglan sleeve"
+                          /></span>
+                          <span class="opt-label">Raglan</span>
+                          <span class="opt-price">+ &#8377;50</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Choose Button -->
+                    <div class="opt-group" data-group="button">
+                      <h3 class="opt-title">Choose Button</h3>
+                      <div class="opt-grid cols-4">
+                        <button
+                          class="opt-card"
+                          data-price="0"
+                          data-name="Flat Button"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/button/image%20185.png"
+                              alt="Flat button"
+                          /></span>
+                          <span class="opt-label">Flat Button</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card is-active"
+                          data-price="20"
+                          data-name="Press Button"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/button/image%20186.png"
+                              alt="Press button"
+                          /></span>
+                          <span class="opt-label">Press Button</span>
+                          <span class="opt-price">+ &#8377;20</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Logo Placement -->
+                    <div class="opt-group" data-group="placement">
+                      <h3 class="opt-title">Logo Placement</h3>
+                      <div class="opt-grid cols-4">
+                        <button
+                          class="opt-card"
+                          data-price="0"
+                          data-name="Right Chest"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/logo%20placement/Gemini_Generated_Image_laygnzlaygnzlayg%201.png"
+                              alt="Right chest logo placement"
+                          /></span>
+                          <span class="opt-label">Right Chest</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card is-active"
+                          data-price="0"
+                          data-name="Left Chest"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/logo%20placement/Gemini_Generated_Image_laygnzlaygnzlayg%201%20(1).png"
+                              alt="Left chest logo placement"
+                          /></span>
+                          <span class="opt-label">Left Chest</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Logo Print Type -->
+                    <div class="opt-group" data-group="print">
+                      <h3 class="opt-title">Logo Print Type</h3>
+                      <div class="opt-grid cols-4">
+                        <button
+                          class="opt-card"
+                          data-price="45"
+                          data-name="Patch"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/logo%20print%20type/image%20189.png"
+                              alt="Patch logo print"
+                          /></span>
+                          <span class="opt-label">Patch</span>
+                          <span class="opt-price">+ &#8377;45</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card is-active"
+                          data-price="30"
+                          data-name="Embroidery"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/logo%20print%20type/image%20190.png"
+                              alt="Embroidery logo print"
+                          /></span>
+                          <span class="opt-label">Embroidery</span>
+                          <span class="opt-price">+ &#8377;30</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card"
+                          data-price="35"
+                          data-name="DTG"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/logo%20print%20type/image%20191.png"
+                              alt="DTG logo print"
+                          /></span>
+                          <span class="opt-label">DTG</span>
+                          <span class="opt-price">+ &#8377;35</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                        <button
+                          class="opt-card"
+                          data-price="25"
+                          data-name="DTF"
+                        >
+                          <span class="opt-thumb"
+                            ><img
+                              src="assets/images/detail%20page/logo%20print%20type/image%20192.png"
+                              alt="DTF logo print"
+                          /></span>
+                          <span class="opt-label">DTF</span>
+                          <span class="opt-price">+ &#8377;25</span>
+                          <span class="opt-check" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="panel-foot">
+                      <button class="btn btn-dark btn-block" id="saveBtn">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===== COLLAPSED PANELS ===== -->
+              <div class="panel panel--plain" data-panel data-aos="fade-up">
+                <button
+                  class="panel-head"
+                  data-panel-toggle
+                  aria-expanded="false"
+                >
+                  <span class="panel-title">Mock Shirt</span>
+                  <span class="panel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 19V5M12 5l-6 6M12 5l6 6" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="panel-body">
+                  <div class="panel-body-inner">
+                    <p class="panel-empty">
+                      Configuration options for the mock shirt will appear here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--plain" data-panel data-aos="fade-up">
+                <button
+                  class="panel-head"
+                  data-panel-toggle
+                  aria-expanded="false"
+                >
+                  <span class="panel-title">Short</span>
+                  <span class="panel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 19V5M12 5l-6 6M12 5l6 6" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="panel-body">
+                  <div class="panel-body-inner">
+                    <p class="panel-empty">
+                      Configuration options for the short will appear here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--plain" data-panel data-aos="fade-up">
+                <button
+                  class="panel-head"
+                  data-panel-toggle
+                  aria-expanded="false"
+                >
+                  <span class="panel-title">Skirt</span>
+                  <span class="panel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 19V5M12 5l-6 6M12 5l6 6" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="panel-body">
+                  <div class="panel-body-inner">
+                    <p class="panel-empty">
+                      Configuration options for the skirt will appear here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--plain" data-panel data-aos="fade-up">
+                <button
+                  class="panel-head"
+                  data-panel-toggle
+                  aria-expanded="false"
+                >
+                  <span class="panel-title">Track Pant</span>
+                  <span class="panel-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 19V5M12 5l-6 6M12 5l6 6" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="panel-body">
+                  <div class="panel-body-inner">
+                    <p class="panel-empty">
+                      Configuration options for the track pant will appear here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-wrap" data-aos="fade-up">
+                <button class="btn btn-dark btn-block btn-lg" id="orderBtn">
+                  Place Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <!-- ============ IMAGE MODAL / LIGHTBOX ============ -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Product image viewer"
+      aria-hidden="true"
+    >
+      <div class="lightbox-backdrop" data-lb-close></div>
+
+      <div class="lightbox-inner" role="document">
+        <button
+          class="lightbox-close"
+          id="lightboxClose"
+          type="button"
+          aria-label="Close image viewer"
+          data-lb-close
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+
+        <button
+          class="lightbox-nav lightbox-nav--prev"
+          id="lightboxPrev"
+          type="button"
+          aria-label="Previous image"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
+        </button>
+
+        <figure class="lightbox-figure">
+          <div class="lightbox-stage">
+            <img id="lightboxImg" src="" alt="" />
+          </div>
+          <figcaption class="lightbox-caption">
+            <span id="lightboxCaption"></span>
+            <span class="lightbox-count">
+              <span id="lightboxCurrent">1</span> /
+              <span id="lightboxTotal">5</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <button
+          class="lightbox-nav lightbox-nav--next"
+          id="lightboxNext"
+          type="button"
+          aria-label="Next image"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
